@@ -2,6 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 4
+title: About me
 ---
 
 Greetings! I am a purposeful software architect with experience in software architecture, application design, and infrastructure management. My journey has been driven by a passion for creating innovative, scalable, and robust solutions that address complex business needs.
