@@ -1,5 +1,7 @@
 ---
 title : Setup ArchLinux in VirtualBox with LVM
+categories: Linux, Arch, Devops
+tags: devops, arch, linux
 ---
 
 # Arch Linux Installation with LVM

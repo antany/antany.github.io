@@ -1,5 +1,6 @@
 ---
 title: Setup Self Signed certificate for Spring boot application
+last_edited: 2024-02-12 10:30:00 +0000
 ---
 
 # Spring Boot - HTTPs setup - Self Signed
