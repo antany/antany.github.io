@@ -37,8 +37,30 @@ dependencies {
     implementation 'org.eclipse.jetty:jetty-server:12.0.16'
 }
 ``` 
-### Program a Simple HTTP Server
+### Program a Simple HelloWorld Server
 
+```java
+        import java.nio.ByteBuffer;
+        import org.eclipse.jetty.server.Handler;
+        import org.eclipse.jetty.server.Request;
+        import org.eclipse.jetty.server.Response;
+        import org.eclipse.jetty.server.Server;
+        import org.eclipse.jetty.util.Callback;
+        ...
+        Server server = new Server(8080 );
+        server.setHandler( new Handler.Abstract(){
+            @Override
+            public boolean handle(Request request, Response response, Callback callback) throws Exception {
+                ByteBuffer byteBuffer = ByteBuffer.wrap("HelloWorld!".getBytes());
+                response.write(isFailed(), byteBuffer, callback);
+                callback.succeeded();
+                return true;
+            }
+        });
+        server.start();
+```        
+
+Currently, the above program can handle only one request at a time. Let's see how we can change the code to handle multiple requests simultaneously.
 
 
 
